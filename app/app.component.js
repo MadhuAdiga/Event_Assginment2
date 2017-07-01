@@ -15,7 +15,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n    <div class=\"container container-fluid\">\n    <h2> Events: Assignment 2</h2><br>\n       Parent Component Value\n      <input type=\"text\" #parentText (keyup)=\"0\"><br><br>\n      <h5>Value from Child Component is  <b>{{parentData}}</b></h5><br><!--Display the data fetched from the child emitter-->\n          \n    <!-- Trigger the modal with a button -->\n    <button type=\"button\" class=\"btn btn-info btn-lg\" data-toggle=\"modal\" data-target=\"#myModal\">Open Modal</button> \n    </div> \n\n    <child (eventData)=\"parentData=($event)\" [childData]=\"parentText.value\"></child><!--Send data to child through childData variable and receive data in eventData variable-->\n  "
+            template: "\n    <div class=\"container container-fluid\">\n    <h2> Events: Assignment 2</h2><br>\n       Parent Component Value\n      <input type=\"text\" #parentText (keyup)=\"0\"><br><br>\n      <h5>Value from Child Component is  <b>{{parentData}}</b></h5><br><!--Display the data fetched from the child emitter-->\n          \n    <!-- Trigger the modal with a button -->\n    <button type=\"button\" class=\"btn btn-success btn-lg\" data-toggle=\"modal\" data-target=\"#myModal\">Open Modal</button> \n    </div> \n\n    <child (eventData)=\"parentData=($event)\" [childData]=\"parentText.value\"></child><!--Send data to child through childData variable and receive data in eventData variable-->\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
